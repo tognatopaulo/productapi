@@ -32,6 +32,7 @@ A aplicação segue o padrão arquitetural **MVC**, com documentação automatiz
 src/main/java/com/paulogusttavotognato/productapi
 ├── controller         # Endpoints REST
 │   └── dto            # DTO should be placed here
+├── exceptions         # Exceções personalizadas
 ├── model              # Entidade Produto
 ├── repository         # Interface JPA
 ├── service            # Regras de negócio
@@ -85,11 +86,13 @@ Configurações:
 ## Arquitetura (Modelo C4)
 
 - **Nível 1 – Contexto**: Usuário acessa a API via HTTP
+![Diagrama C4 - Nível 1 - Contexto](c4n1.png)
 - **Nível 2 – Containers**: Aplicação Spring Boot + H2 Database
+![Diagrama C4 - Nível 2 - Containers](c4n2.png)
 - **Nível 3 – Componentes**: Controller, Service, Repository, Model
+![Diagrama C4 - Nível 3 - Componentes](c4n3.png)
 - **Nível 4 – Código**: Classe ProdutoService com métodos de negócio
-
-> Diagrama visual completo disponível em `/docs/diagrama-c4.png`
+![Diagrama C4 - Nível 4 - Código](c4n4.png)
 
 ---
 
