@@ -31,7 +31,7 @@ A aplicação segue o padrão arquitetural **MVC**, com documentação automatiz
 ```
 src/main/java/com/paulogusttavotognato/productapi
 ├── controller         # Endpoints REST
-│   └── dto            # Classe de transferência de dados
+│   └── dto            # Classes de transferência de dados
 ├── exceptions         # Exceções personalizadas
 ├── model              # Entidade Produto
 ├── repository         # Interface JPA
