@@ -44,7 +44,7 @@ src/main/java/com/paulogusttavotognato/productapi
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seuusuario/produto-api.git
+git clone https://github.com/tognatopaulo/productapi.git
 ```
 
 2. Navegue até a pasta e rode a aplicação:
