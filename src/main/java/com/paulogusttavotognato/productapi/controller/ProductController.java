@@ -67,4 +67,12 @@ public class ProductController {
         return ResponseEntity.noContent().build();
     }
 
+    @PutMapping("/{id}")
+    private ResponseEntity<ProductResponse> update(@PathVariable Long id, @Valid @RequestBody ProductRequest product) {
+        var updatedProduct = new Product(product.getName(), product.getDescription(), product.getPrice());
+        var savedProduct = productService.update(id, updatedProduct);
+        var productResponse = new ProductResponse(savedProduct.getId(), savedProduct.getName(), savedProduct.getDescription(), savedProduct.getPrice());
+        return ResponseEntity.ok(productResponse);
+    }
+
 }
